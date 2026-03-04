@@ -84,6 +84,14 @@ namespace ConsoleApp1
     }
     public class Calculator
     {
+        public static void Stepen(int num,int stepen)
+        {
+            int res = num;
+            for (int i = 0; i < stepen - 1; i++)
+            {
+                res *= num;
+            }
+        }
         public static void CalculatorOfIBM(int kg,int height)
         {
             var res = kg / height;
