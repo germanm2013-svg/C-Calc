@@ -1,4 +1,5 @@
 ﻿using System.Runtime.Intrinsics.Arm;
+using System.Security.Cryptography;
 using System.Xml.Linq;
 
 namespace ConsoleApp1
@@ -83,6 +84,12 @@ namespace ConsoleApp1
     }
     public class Calculator
     {
+        public static void CalculatorOfIBM(int kg,int height)
+        {
+            var res = kg / height;
+            Console.WriteLine(res);
+            Save($"Индекс массы тела равен {res}");
+        }
         public static void ClearTxt()
         {
             try
