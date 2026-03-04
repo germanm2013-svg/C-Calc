@@ -69,7 +69,7 @@ namespace ConsoleApp1
     }
     public class Calculator
     {
-        public static List<int> Generation() { var rnd = new Random();var generaitedList = Enumerable.Range(1, 20).Select(i => rnd.Next(1, 10000)).ToList(); foreach (var i in generaitedList) Save(Convert.ToString(i)); return generaitedList; }
+        public static List<int> Generation() { var rnd = new Random();var generaitedList = Enumerable.Range(1, 20).Select(i => rnd.Next(1, 10000)).ToList(); foreach (var i in generaitedList) Save($"{i}"); return generaitedList; }
 
         public static double Okruglenie(int okrugNum, double num) => Math.Round(num,okrugNum);
         private static void Save(string strToSave)
