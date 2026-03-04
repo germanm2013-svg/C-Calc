@@ -71,6 +71,11 @@ namespace ConsoleApp1
                         Calculator.ClearTxt();
                         break;
                     }
+                case "factorial":
+                    {
+                        Calculator.Factorial(int.Parse(mathDate[0]));
+                        break;
+                    }
             }
 
         }
@@ -160,6 +165,15 @@ namespace ConsoleApp1
             var res = FirstNumber % SecondNumber;
             Console.WriteLine($"{FirstNumber} % {SecondNumber} = {res}");
             Save($"{FirstNumber} % {SecondNumber} = {res}");
+        }
+        public static void Factorial(int num)
+        {
+            int Facrotial = 1;
+            for (int i = 1;i <= num; i++)
+            {
+                Facrotial *= i;
+            }
+            Console.WriteLine(Facrotial);
         }
     }
 }
