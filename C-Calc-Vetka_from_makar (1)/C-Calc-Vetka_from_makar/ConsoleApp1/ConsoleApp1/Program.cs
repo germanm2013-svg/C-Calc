@@ -1,4 +1,5 @@
-﻿using System.Xml.Linq;
+﻿using System.Runtime.Intrinsics.Arm;
+using System.Xml.Linq;
 
 namespace ConsoleApp1
 {
@@ -36,6 +37,31 @@ namespace ConsoleApp1
                         Calculator.Read();
                         break;
                     }
+                case "okrug":
+                    {
+                        Console.WriteLine(Calculator.Okruglenie(int.Parse(mathDate[2]), int.Parse(mathDate[0])));
+                        break;
+                    }
+                case "+":
+                    {
+                        Calculator.Plus(int.Parse(mathDate[0]), int.Parse(mathDate[2]));
+                        break;
+                    }
+                case "*":
+                    {
+                        Calculator.Mult(int.Parse(mathDate[0]), int.Parse(mathDate[2]));
+                        break;
+                    }
+                case "%":
+                    {
+                        Calculator.OstatokOtDeleniya(int.Parse(mathDate[0]), int.Parse(mathDate[2]));
+                        break;
+                    }
+                case "generation":
+                    {
+                        Console.WriteLine("Успешная генерация");
+                        break;
+                    }
             }
 
         }
@@ -43,6 +69,9 @@ namespace ConsoleApp1
     }
     public class Calculator
     {
+        public static List<int> Generation() { var rnd = new Random();var generaitedList = Enumerable.Range(1, 20).Select(i => rnd.Next(1, 10000)).ToList(); foreach (var i in generaitedList) Save(Convert.ToString(i)); return generaitedList; }
+
+        public static double Okruglenie(int okrugNum, double num) => Math.Round(num,okrugNum);
         private static void Save(string strToSave)
         {
             try
@@ -90,6 +119,24 @@ namespace ConsoleApp1
             var res = FirstNumber / SecondNumber;
             Console.WriteLine($"{FirstNumber} - {SecondNumber} = {res}");
             Save($"{FirstNumber} / {SecondNumber} = {res}");
+        }
+        public static void Plus(double FirstNumber, double SecondNumber)
+        {
+            var res = FirstNumber + SecondNumber;
+            Console.WriteLine($"{FirstNumber} + {SecondNumber} = {res}");
+            Save($"{FirstNumber} + {SecondNumber} = {res}");
+        }
+        public static void Mult(double FirstNumber, double SecondNumber)
+        {
+            var res = FirstNumber * SecondNumber;
+            Console.WriteLine($"{FirstNumber} * {SecondNumber} = {res}");
+            Save($"{FirstNumber} * {SecondNumber} = {res}");
+        }
+        public static void OstatokOtDeleniya(double FirstNumber, double SecondNumber)
+        {
+            var res = FirstNumber % SecondNumber;
+            Console.WriteLine($"{FirstNumber} % {SecondNumber} = {res}");
+            Save($"{FirstNumber} % {SecondNumber} = {res}");
         }
     }
 }
