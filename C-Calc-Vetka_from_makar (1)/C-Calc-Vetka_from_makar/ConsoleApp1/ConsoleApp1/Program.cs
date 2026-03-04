@@ -7,7 +7,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine("введите пример");
-            Console.WriteLine("*n1 (действие) n2*"); // лучше сделать систему ввода как написано левее чтобы пользователю было понятно
+            Console.WriteLine("*n1 (действие/команда) n2*"); // лучше сделать систему ввода как написано левее чтобы пользователю было понятно
             var deystvie = Console.ReadLine();
             string[]? mathDate = deystvie.Split(' ');
             mathDate = mathDate ?? new string[] {"0","+","0"};
@@ -31,6 +31,11 @@ namespace ConsoleApp1
                         Calculator.Delit(int.Parse(mathDate[0]), int.Parse(mathDate[2]));
                         break;
                     }
+                case "read":
+                    {
+                        Calculator.Read();
+                        break;
+                    }
             }
 
         }
@@ -42,10 +47,31 @@ namespace ConsoleApp1
         {
             try
             {
+                
                 using (var sw = new StreamWriter(_path, true))//Добавил сохронение в файл
                 {
                     sw.WriteLine(strToSave);
                 }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+        public static void Read()
+        {
+            try
+            {
+                Console.WriteLine("------------------------");
+                using (var sr = new StreamReader(_path))//Добавил чтение файла
+                {
+                    string line;
+                    while((line = sr.ReadLine()) != null)
+                    {
+                        Console.WriteLine(line);
+                    }
+                }
+                Console.WriteLine("------------------------");
             }
             catch (Exception ex)
             {

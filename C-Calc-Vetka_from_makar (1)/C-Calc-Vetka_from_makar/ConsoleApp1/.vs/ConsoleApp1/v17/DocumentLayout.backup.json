@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{7B40F1FD-A49E-46C2-BF49-01482F86BD98}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\new\\desktop\\project\\c-calc-vetka_from_makar (1)\\c-calc-vetka_from_makar\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B40F1FD-A49E-46C2-BF49-01482F86BD98}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\New\\Desktop\\Project\\C-Calc-Vetka_from_makar (1)\\C-Calc-Vetka_from_makar\\ConsoleApp1\\ConsoleApp1\\bin\\Debug\\net9.0\\Calc.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConsoleApp1\\bin\\Debug\\net9.0\\Calc.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Calc.txt",
+              "DocumentMoniker": "C:\\Users\\New\\Desktop\\Project\\C-Calc-Vetka_from_makar (1)\\C-Calc-Vetka_from_makar\\ConsoleApp1\\ConsoleApp1\\bin\\Debug\\net9.0\\Calc.txt",
+              "RelativeDocumentMoniker": "ConsoleApp1\\bin\\Debug\\net9.0\\Calc.txt",
+              "ToolTip": "C:\\Users\\New\\Desktop\\Project\\C-Calc-Vetka_from_makar (1)\\C-Calc-Vetka_from_makar\\ConsoleApp1\\ConsoleApp1\\bin\\Debug\\net9.0\\Calc.txt",
+              "RelativeToolTip": "ConsoleApp1\\bin\\Debug\\net9.0\\Calc.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-03-04T18:14:50.164Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
@@ -28,7 +45,7 @@
               "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
               "ToolTip": "C:\\Users\\New\\Desktop\\Project\\C-Calc-Vetka_from_makar (1)\\C-Calc-Vetka_from_makar\\ConsoleApp1\\ConsoleApp1\\Program.cs",
               "RelativeToolTip": "ConsoleApp1\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-04T17:23:34.918Z",
               "EditorCaption": ""
