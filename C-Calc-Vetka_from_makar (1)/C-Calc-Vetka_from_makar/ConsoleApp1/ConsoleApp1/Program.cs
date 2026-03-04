@@ -59,7 +59,16 @@ namespace ConsoleApp1
                     }
                 case "generation":
                     {
+                        foreach (var item in Calculator.Generation())
+                        {
+                            Console.WriteLine($"{item}");
+                        } 
                         Console.WriteLine("Успешная генерация");
+                        break;
+                    }
+                case "clear":
+                    {
+                        Calculator.ClearTxt();
                         break;
                     }
             }
@@ -69,6 +78,20 @@ namespace ConsoleApp1
     }
     public class Calculator
     {
+        public static void ClearTxt()
+        {
+            try
+            {
+                using (var sw = new StreamWriter(_path))
+                {
+                    sw.WriteLine("*Obsolutly cleared txt*");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
         public static List<int> Generation() { var rnd = new Random();var generaitedList = Enumerable.Range(1, 20).Select(i => rnd.Next(1, 10000)).ToList(); foreach (var i in generaitedList) Save($"{i}"); return generaitedList; }
 
         public static double Okruglenie(int okrugNum, double num) => Math.Round(num,okrugNum);
