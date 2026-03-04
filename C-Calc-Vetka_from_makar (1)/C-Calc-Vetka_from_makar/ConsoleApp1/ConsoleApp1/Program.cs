@@ -23,12 +23,12 @@ namespace ConsoleApp1
             {
                 case "-":
                     {
-                        Calculator.Minus(int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()));
+                        Calculator.Minus(int.Parse(mathDate[0]), int.Parse(mathDate[2]));
                         break;
                     }
                 case "/":
                     {
-                        Calculator.Delit(int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()));
+                        Calculator.Delit(int.Parse(mathDate[0]), int.Parse(mathDate[2]));
                         break;
                     }
             }

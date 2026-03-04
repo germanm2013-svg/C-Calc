@@ -12,3 +12,4 @@ C:\Users\New\Desktop\Project\C-Calc-Vetka_from_makar (1)\C-Calc-Vetka_from_makar
 C:\Users\New\Desktop\Project\C-Calc-Vetka_from_makar (1)\C-Calc-Vetka_from_makar\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.pdb
 C:\Users\New\Desktop\Project\C-Calc-Vetka_from_makar (1)\C-Calc-Vetka_from_makar\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.genruntimeconfig.cache
 C:\Users\New\Desktop\Project\C-Calc-Vetka_from_makar (1)\C-Calc-Vetka_from_makar\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ref\ConsoleApp1.dll
+C:\Users\New\Desktop\Project\C-Calc-Vetka_from_makar (1)\C-Calc-Vetka_from_makar\ConsoleApp1\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.sourcelink.json
