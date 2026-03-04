@@ -9,9 +9,9 @@ namespace ConsoleApp1
         {
             Console.WriteLine("введите пример");
             Console.WriteLine("*n1 (действие/команда) n2*"); // лучше сделать систему ввода как написано левее чтобы пользователю было понятно
-            var deystvie = Console.ReadLine();
-            string[]? mathDate = deystvie.Split(' ');
-            mathDate = mathDate ?? new string[] {"0","+","0"};
+            string? deystvie = Console.ReadLine();
+            deystvie = deystvie ?? "0 + 0";
+            string[] mathDate = deystvie.Split(' ');
             try
             {
                 if (mathDate.Length > 3 || mathDate.Length < 3) throw new Exception("Ошибка ввода!");
