@@ -9,7 +9,16 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             
-            Console.WriteLine("введите пример");
+            Console.WriteLine($"\t === ЖЕСТКИЙ КРУТОЙ КАЛЬКУЛЯТОР ===");
+            Console.WriteLine("\tНаш калькулятор может:");
+            Console.WriteLine("\tCкладывать, ");
+            Console.WriteLine("\tВычитать, ");
+            Console.WriteLine("\tУмножать, ");
+            Console.WriteLine("\tДелить, ");
+            Console.WriteLine("\tВычислять степени, ");
+            Console.WriteLine("\tСчитать факториал, ");
+            Console.WriteLine("\tИ все такое. ");
+            Console.WriteLine("введите пример:");
             Console.WriteLine("*n1 (действие/команда) n2*"); // лучше сделать систему ввода как написано левее чтобы пользователю было понятно
             string? deystvie = Console.ReadLine();
             deystvie = deystvie ?? "0 + 0";
